@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto CSS3 Segundo</title>
+
+    <style type="text/css">
+        /*  body{
+        display: flex;
+        justify-content: center;
+       } */
+
+        .elementoImagen {
+            display:flex;
+            /* justify-content: center; */
+            margin-left: 25vw;
+            margin-right: 25vw;
+
+            width: 50vw;
+            height: 50vh; 
+            background-image: url("patron50px.jpg");
+            background-repeat: repeat;
+        }
+
+        .texto {
+            display: flex;
+            justify-content: center;
+            margin-left: 4%;
+            margin-right: 4%;
+            padding-left: 1%;
+            padding-right: 1%;
+            width: 90%;
+            text-align: justify;
+            background-color: bisque;
+
+        }
+
+        .separador{
+            width: 100%;
+            height: 20px;
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class='elementoImagen'>
+
+    </div>
+    <div class='separador'>
+
+    </div>
+
+
+    <div class='texto'>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur placeat quos
+            necessitatibus deserunt,
+            consequatur vel eum, alias reprehenderit quidem doloribus quam inventore unde odio similique quisquam. Quam,
+            praesentium nobis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur placeat quos
+            necessitatibus deserunt,
+            consequatur vel eum, alias reprehenderit quidem doloribus quam inventore unde odio similique quisquam. Quam,
+            praesentium nobis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur placeat quos
+            necessitatibus deserunt,
+            consequatur vel eum, alias reprehenderit quidem doloribus quam inventore unde odio similique quisquam. Quam,
+            praesentium nobis.
+            Lorem, ipsum dolor sit amet consectetur adipisicing Total 100 palabras
+        </p>
+    </div>
+</body>
+
+</html>
+
+<!-- Se debe crear una página web que contenga (1) una imagen como fondo de un elemento que también tendrá bordes y (2) un 
+    texto de al menos 100 palabras (puede ser lorem ipsum). En el mismo fichero .html estará todo el código necesario (html y css).
+
+El comportamiento estático de la página será el siguiente:
+
+    1. Debajo y centrado el párrafo con el texto, ocupando el 90% del área visible y con los atributos padding, margin y background-color definidos.
+    2. Arriba y centrado el elemento que contenga la imagen. El elemento ocupará el 50% del area visible y la imagen que contiene será definida como atribudo background-image.
+ 
+El comportamiento DINÁMICO de la página será el siguiente:
+
+    1. Utilizar hover y clic para que se modifiquen al menos los siguientes aspectos de los elementos de forma diferente:
+    2. La imagen cambiará y se verá totalmente contenida en el elemento, que tendrá un padding de 20px y que la imagen no va a invadir; este elemento no superará el 30% del viewport.
+    3. El texto se verá en 2 y 3 columnas; en total el texto no superará el 30% del alto disponible del viewport y se cambiará la fuente de la primera letra de cada párrafo.
+    4. El último párrafo tendrá un color de fuente y de fondo diferentes usando para esto selectores de pseudoclases y/o pseudoelementos. 
+
+    ENTREGA: adjuntar en formato comprimido el fichero .html de la página web, y adjuntar la URL de la página publicada como web en un repositorio público, para poder verla con un simple click. -->
