@@ -8,41 +8,62 @@
     <title>Proyecto CSS3 Segundo</title>
 
     <style type="text/css">
-        /*  body{
-        display: flex;
-        justify-content: center;
-       } */
-
-        .elementoImagen {
+       p{
+           margin: 0 auto;
+       }    
+       .elementoImagen {
             display:flex;
-            /* justify-content: center; */
             margin-left: 25vw;
             margin-right: 25vw;
-
             width: 50vw;
             height: 50vh; 
             background-image: url("patron50px.jpg");
-            background-repeat: repeat;
+            background-repeat:repeat;
+            background-position: center;
+            background-color: cadetblue;
         }
-
-        .texto {
-            display: flex;
-            justify-content: center;
+        .elementoImagen:hover {
+            display:flex;
+            margin-left: 35vw;
+            margin-right: 35vw;
+            width: 30vw;
+            height: 30vh; 
+            background-image: url("patron50pxfiltro.jpg");
+            background-repeat:repeat;
+            background-position: center;
+            background-color: cadetblue;
+        }
+        .texto:active{
+            text-align: justify;
             margin-left: 4%;
             margin-right: 4%;
-            padding-left: 1%;
-            padding-right: 1%;
-            width: 90%;
-            text-align: justify;
+            padding: 5px;  
+            width: 90%; 
             background-color: bisque;
-
+            column-count: 3; 
+            column-gap: 2em; 
         }
-
+        .texto{
+            max-height: 30vh;
+            text-align: justify;
+            margin-left: 4%;
+            margin-right: 4%;
+            padding: 5px;  
+            width: 90%; 
+            background-color: rgb(194, 174, 150);
+            column-count: 2; 
+            column-gap: 2em; 
+        }
+        p::first-letter {
+          color: #ff0000;
+          font-size: xx-large;
+        }
+        .ultimoP:hover{
+            background-color: aqua;
+            color: blueviolet;
+        }
         .separador{
-            width: 100%;
-            height: 20px;
-
-
+            height: 2vh;
         }
     </style>
 
@@ -55,24 +76,28 @@
 
     </div>
     <div class='separador'>
-
+   
     </div>
 
 
     <div class='texto'>
-        <p>
+        <p> 
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur placeat quos
             necessitatibus deserunt,
             consequatur vel eum, alias reprehenderit quidem doloribus quam inventore unde odio similique quisquam. Quam,
             praesentium nobis.
+        <p>   
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur placeat quos
             necessitatibus deserunt,
             consequatur vel eum, alias reprehenderit quidem doloribus quam inventore unde odio similique quisquam. Quam,
             praesentium nobis.
+        </p>
+        <p>   
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequuntur placeat quos
             necessitatibus deserunt,
             consequatur vel eum, alias reprehenderit quidem doloribus quam inventore unde odio similique quisquam. Quam,
             praesentium nobis.
+        <p class='ultimoP'>
             Lorem, ipsum dolor sit amet consectetur adipisicing Total 100 palabras
         </p>
     </div>
@@ -90,9 +115,11 @@ El comportamiento estático de la página será el siguiente:
  
 El comportamiento DINÁMICO de la página será el siguiente:
 
-    1. Utilizar hover y clic para que se modifiquen al menos los siguientes aspectos de los elementos de forma diferente:
-    2. La imagen cambiará y se verá totalmente contenida en el elemento, que tendrá un padding de 20px y que la imagen no va a invadir; este elemento no superará el 30% del viewport.
-    3. El texto se verá en 2 y 3 columnas; en total el texto no superará el 30% del alto disponible del viewport y se cambiará la fuente de la primera letra de cada párrafo.
-    4. El último párrafo tendrá un color de fuente y de fondo diferentes usando para esto selectores de pseudoclases y/o pseudoelementos. 
+    Utilizar hover y clic para que se modifiquen al menos los siguientes aspectos de los elementos de forma diferente:
+        1. La imagen cambiará y se verá totalmente contenida en el elemento, que tendrá un padding de 20px 
+        y que la imagen no va a invadir; este elemento no superará el 30% del viewport.
+        2. El texto se verá en 2 y 3 columnas; en total el texto no superará el 30% del alto disponible del viewport 
+        y se cambiará la fuente de la primera letra de cada párrafo.
+        3. El último párrafo tendrá un color de fuente y de fondo diferentes usando para esto selectores de pseudoclases y/o pseudoelementos. 
 
     ENTREGA: adjuntar en formato comprimido el fichero .html de la página web, y adjuntar la URL de la página publicada como web en un repositorio público, para poder verla con un simple click. -->
