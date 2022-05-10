@@ -8,8 +8,8 @@
     <title>Proyecto CSS3 Segundo</title>
 
     <style type="text/css">
-       p{
-           margin: 0 auto;
+      p{
+        margin: 0 auto;
        }    
        .elementoImagen {
             display:flex;
@@ -44,16 +44,19 @@
             column-gap: 2em; 
         }
         .texto{
+            overflow:hidden;  /*se perderá el texto si no entra en el div. He probado con overflow-y:scroll; pero no hace lo que debe */
             max-height: 30vh;
             text-align: justify;
             margin-left: 4%;
             margin-right: 4%;
             padding: 5px;  
-            width: 90%; 
+            max-width: 90%;
+            min-width: 90%; 
             background-color: rgb(194, 174, 150);
             column-count: 2; 
             column-gap: 2em; 
         }
+
         p::first-letter {
           color: #ff0000;
           font-size: xx-large;
@@ -71,14 +74,8 @@
 
 <body>
 
-
-    <div class='elementoImagen'>
-
-    </div>
-    <div class='separador'>
-   
-    </div>
-
+    <div class='elementoImagen'></div>
+    <div class='separador'>    </div>
 
     <div class='texto'>
         <p> 
